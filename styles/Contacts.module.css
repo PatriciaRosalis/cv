@@ -1,0 +1,28 @@
+.container {
+    height: 372px;
+    background: #e95973;
+    padding-left: 30px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+.contactDetail {
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.socialMedia {
+    display: flex;
+    margin-top: 45px;
+    margin-bottom: 85px;
+}
+
+.gitHubImg {
+    margin-right: 30px;
+}

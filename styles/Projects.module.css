@@ -1,0 +1,32 @@
+.projectsContainer {
+    background-image: linear-gradient(#e95973, #6562be);
+    width: 100%;
+    height: 825px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+    margin-left: 30px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.options {
+    margin-left: 30px;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+    background: none;
+    border: none;
+    opacity: 0.5;
+}
+
+.options:active,
+.options:focus {
+    text-decoration: underline;
+    color: white;
+    opacity: 1;
+}

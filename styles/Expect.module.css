@@ -1,0 +1,43 @@
+.container {
+    height: 1150px;
+    background: white;
+    margin-left: 30px;
+}
+
+.expectContainer {
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.expectContainerRight {
+    text-align: right;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.expectTitlePink {
+    font-weight: 700;
+    font-size: 30px;
+    color: #e95973;
+    margin-bottom: 0;
+}
+
+.expectTitlePurple {
+    font-weight: 700;
+    font-size: 30px;
+    color: #6562be;
+    margin-bottom: 0;
+}
+
+.expectResume {
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 0;
+}

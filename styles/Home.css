@@ -1,0 +1,75 @@
+.homePhotoSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 30px;
+    color: #e95973;
+}
+
+.titleDescription {
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+#dark .titleDescription {
+    color: white;
+}
+
+.homePhotoSection .main-photo {
+    width: 253px;
+    height: 254px;
+}
+
+.location {
+    font-weight: 500;
+    font-size: 20px;
+    color: #e95973;
+    margin-top: 0;
+}
+
+.buttonContact {
+    background: #e95973;
+    width: 316px;
+    height: 56px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    margin-bottom: 85px;
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .card,
+    .footer {
+        border-color: #222;
+    }
+    .code {
+        background: #111;
+    }
+    .logo img {
+        filter: invert(1);
+    }
+}
