@@ -1,8 +1,17 @@
-export default function Switch() {
+import { ChangeEventHandler } from 'react';
+
+type Props = { onChange: ChangeEventHandler<HTMLInputElement> };
+
+export default function Switch({ onChange }: Props) {
     return (
         <div>
             <div className='toggleWrapper'>
-                <input type='checkbox' className='dn' id='dn' />
+                <input
+                    type='checkbox'
+                    className='dn'
+                    id='dn'
+                    onChange={onChange}
+                />
                 <label htmlFor='dn' className='toggle'>
                     <span className='toggle__handler'>
                         <span className='crater crater--1'></span>
