@@ -28,21 +28,35 @@ const Home: NextPage = () => {
                 </h1>
                 <p className='location'>Currently living in London</p>
 
-                <button className='buttonContact'>CONTACT ME</button>
+                <button className='buttonContact'>
+                    <a href='mailto:rosalispatricia@gmail.com'>CONTACT ME</a>
+                </button>
 
                 <div className='socialMedia'>
-                    <img
-                        src='/github.svg'
-                        alt='github'
-                        width={44}
-                        height={44}
-                    />
-                    <img
-                        src='/lnkedin.svg'
-                        alt='lnkedin'
-                        width={44}
-                        height={44}
-                    />
+                    <a
+                        href='
+                https://github.com/PatriciaRosalis'
+                        target='_blank'
+                    >
+                        <img
+                            src='/github.svg'
+                            alt='github'
+                            width={44}
+                            height={44}
+                        />
+                    </a>
+                    <a
+                        href='https://www.linkedin.com/in/patriciarosalis/'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
+                        <img
+                            src='/lnkedin.svg'
+                            alt='lnkedin'
+                            width={44}
+                            height={44}
+                        />
+                    </a>
                 </div>
             </section>
             <section>

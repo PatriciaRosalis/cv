@@ -1,26 +1,31 @@
-.container {
+.container-about {
     margin-top: 60px;
     margin-left: 30px;
     height: 790px;
     margin-right: 30px;
 }
 
-.title {
+.title-about {
     font-weight: 700;
     font-size: 40px;
     color: black;
 }
 
-.dateTitle {
+.dateTitle-about {
     font-weight: 700;
     font-size: 30px;
     color: #e95973;
     margin-bottom: 0px;
 }
 
-.resume {
+.resume-about {
     font-weight: 400;
     font-size: 20px;
     color: #000000;
     margin-top: 0;
+}
+
+#dark .title-about,
+#dark .resume-about {
+    color: white;
 }
