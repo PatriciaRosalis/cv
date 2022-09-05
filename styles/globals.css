@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    scroll-behavior: smooth;
 }
 
 #light {
@@ -33,7 +34,7 @@ nav {
     margin-left: 30px;
 }
 
-nav h1 {
+nav h1 a {
     color: #e95973;
     font-size: 36px;
 }
@@ -42,19 +43,19 @@ footer {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
-    height: 190px;
-    background: white;
+    height: 120px;
+    margin-top: 70px;
 }
 
 footer h1 {
+    margin-bottom: 0;
+}
+
+footer h1 a {
     font-weight: 700;
     font-size: 30px;
     color: #e95973;
     margin-bottom: 0;
-}
-
-.link-footer {
-    margin-top: 70px;
 }
 
 .link-footer a {
@@ -64,19 +65,12 @@ footer h1 {
     margin-bottom: 0;
 }
 
+#dark .link-footer a {
+    color: white;
+}
+
 @media only screen and (max-width: 500px) {
     .link-nav {
         display: none;
     }
 }
-
-/*
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */
