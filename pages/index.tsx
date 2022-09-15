@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import AboutMe from './AboutMe';
-import Contacts from './Contacts';
-import Expect from './Expect';
-import Projects from './Projects';
-import Skills from './Skills';
+import AboutMe from '../AboutMe';
+import Contacts from '../Contacts';
+import Expect from '../Expect';
+import Projects from '../Projects';
+import Skills from '../Skills';
 
 const Home: NextPage = () => {
     return (

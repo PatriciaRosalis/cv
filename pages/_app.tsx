@@ -6,6 +6,7 @@ import '../styles/About.css';
 import '../styles/Expect.css';
 import '../styles/globals.css';
 import '../styles/Home.css';
+import '../styles/Projects.css';
 import '../styles/Switch.scss';
 
 export const ThemeContext = createContext({

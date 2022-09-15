@@ -11,7 +11,7 @@ export default function Nav() {
 
             <div className='link-footer'>
                 <Link href='#projects'>PROJECTS</Link>
-                <Link href='#about-me'>ABOUT ME</Link>
+                <Link href='/blog'>BLOG</Link>
             </div>
         </footer>
     );

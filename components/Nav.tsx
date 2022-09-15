@@ -21,8 +21,9 @@ export default function Nav() {
 
             <div className='link-nav'>
                 <Link href='#projects'>PROJECTS</Link>
+                <Link href='/Blog'>BLOG</Link>
                 <Link href='#about-me'>ABOUT ME</Link>
-                <Link href='#contact-me'>CONTACT ME</Link>
+                <Link href='#contact-me'>CONTACTS</Link>
             </div>
         </nav>
     );

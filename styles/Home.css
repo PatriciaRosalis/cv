@@ -53,3 +53,44 @@
     margin-bottom: 85px;
     width: 50%;
 }
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper {
+    height: 550px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    height: 400px;
+    width: 400px;
+}
+
+.slider-title {
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 0;
+}

@@ -4,7 +4,7 @@
     height: 825px;
 }
 
-.title {
+.title-projects {
     font-weight: 700;
     font-size: 40px;
     color: white;
@@ -13,7 +13,7 @@
     margin-bottom: 10px;
 }
 
-.options {
+.options-projects {
     margin-left: 30px;
     margin-top: 0;
     font-weight: 500;
@@ -24,8 +24,13 @@
     opacity: 0.5;
 }
 
-.options:active,
-.options:focus {
+.active {
+    margin-left: 30px;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 25px;
+    background: none;
+    border: none;
     text-decoration: underline;
     color: white;
     opacity: 1;

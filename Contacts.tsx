@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from '../styles/Contacts.module.css';
+import styles from './styles/Contacts.module.css';
 
 export default function Contacts() {
     return (

@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from '../styles/Skills.module.css';
+import styles from './styles/Skills.module.css';
 
 export default function Skills() {
     return (

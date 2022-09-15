@@ -39,6 +39,15 @@ nav h1 a {
     font-size: 36px;
 }
 
+.link-nav {
+    justify-content: space-between;
+    display: flex;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    width: 55%;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -69,8 +78,16 @@ footer h1 a {
     color: white;
 }
 
+#dark .link-nav a {
+    color: white;
+}
+
 @media only screen and (max-width: 500px) {
     .link-nav {
+        display: none;
+    }
+
+    .blog-container .link-nav {
         display: none;
     }
 }
