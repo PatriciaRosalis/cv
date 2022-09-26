@@ -1,8 +1,10 @@
+import { MDXProvider } from '@mdx-js/react';
 import type { AppProps } from 'next/app';
 import { createContext, useState } from 'react';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import '../styles/About.css';
+import '../styles/Article.css';
 import '../styles/Expect.css';
 import '../styles/globals.css';
 import '../styles/Home.css';
@@ -23,11 +25,13 @@ function MyApp({ Component, pageProps }: AppProps) {
 
     return (
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
-            <div id={theme}>
-                <Nav />
-                <Component {...pageProps} />
-                <Footer />
-            </div>
+            <MDXProvider>
+                <div id={theme}>
+                    <Nav />
+                    <Component {...pageProps} />
+                    <Footer />
+                </div>
+            </MDXProvider>
         </ThemeContext.Provider>
     );
 }

@@ -19,7 +19,7 @@ const Home: NextPage = () => {
                 <link rel='icon' href='/patcv.svg' />
             </Head>
 
-            <section className='homePhotoSection'>
+            <section className='homePhotoSection' id='home-section'>
                 <img id='main-photo' src='/patcv.svg' alt='pat-cv' />
 
                 <h2 className='title'>Patrícia Rosális</h2>

@@ -48,10 +48,14 @@
 
 .socialMedia {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 25px;
     margin-bottom: 85px;
     width: 50%;
+}
+
+.socialMedia a:first-child {
+    margin-right: 30px;
 }
 
 .swiper-slide {
