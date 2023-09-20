@@ -1,0 +1,171 @@
+@import '../../styles/theme-variables.scss';
+
+.header {
+    padding: 24px 55px;
+
+    @include themify($themes) {
+        background: themed('colorBackground');
+    }
+
+    .header-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo-section {
+                text-decoration: none;
+
+                .logo {
+                    color: #E95973;
+                    font-size: 36px;
+                    font-weight: bold;
+                }
+            }
+
+            nav {
+
+                a {
+                    padding-inline-start: 60px;
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                    @include themify($themes) {
+                        color: themed('colorText');
+                    }
+                }
+            }
+        }
+
+        .toggle-btn-section {
+            display: flex;
+            justify-content: end;
+
+            input[type="checkbox"] {
+                width: 0;
+                height: 0;
+                visibility: hidden;
+            }
+
+            label {
+                width: 64px;
+                height: 32px;
+                display: block;
+                background-color: #4AAFF0;
+                border-radius: 100px;
+                position: relative;
+                cursor: pointer;
+                transition: 0.5s;
+                box-shadow: 0 0 20px #477a8550;
+            }
+
+            label::after {
+                content: "";
+                width: 23px;
+                height: 23px;
+                background-color: #e8f5f7;
+                position: absolute;
+                border-radius: 70px;
+                top: 5px;
+                left: 5px;
+                transition: 0.5s;
+            }
+
+            input:checked+label:after {
+                left: calc(100% - 10px);
+                transform: translateX(-100%);
+            }
+
+            input:checked+label {
+                background-color: #000;
+            }
+
+            label:active:after {
+                width: 160px;
+            }
+        }
+
+        .header-resume-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+
+            .header-resume {
+                .name {
+                    color: #E95973;
+                    font-weight: 500;
+                    font-size: 48px;
+                    margin-bottom: 30px;
+                }
+
+                .career,
+                .passionate {
+                    font-size: 50px;
+                    font-weight: bold;
+                    margin: 0px;
+
+                    @include themify($themes) {
+                        color: themed('colorText');
+                    }
+                }
+
+                .passionate {
+                    margin-top: 0px;
+                    margin-bottom: 20px;
+                }
+
+                .location {
+                    color: #E95973;
+                    font-size: 35px;
+                    font-weight: 500;
+                    margin-bottom: 30px;
+                }
+
+                .btn-wrapper {
+                    display: flex;
+                    align-items: center;
+
+                    button {
+                        border: none;
+                        background-color: transparent;
+                    }
+
+                    .btn-contact {
+                        display: block;
+                        width: 304px;
+                        height: 70px;
+                        background-color: #E95973;
+                        font-size: 25px;
+                        font-weight: bold;
+                        border-radius: 15px;
+                        color: white;
+                        cursor: pointer;
+                        margin-inline-end: 36px;
+                    }
+
+                    .github,
+                    .linkedin {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 70px;
+                        width: 70px;
+                        cursor: pointer;
+                        border: 2px solid #E95973;
+                        font-weight: bold;
+                        border-radius: 20px;
+                        color: #E95973;
+                        margin-inline-end: 16px;
+                    }
+                }
+
+            }
+        }
+    }
+}

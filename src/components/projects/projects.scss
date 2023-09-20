@@ -1,0 +1,15 @@
+@import '../../styles/theme-variables.scss';
+
+.projects-container {
+    height: 1008px;
+
+    @include themify($themes) {
+        background: themed('projectsBackground');
+    }
+    
+    .title {
+        font-size: 60px;
+        font-weight: bold;
+    }
+}
+

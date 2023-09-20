@@ -1,0 +1,41 @@
+// theme-variables.scss
+$themes: (
+    light: (
+        colorHeaderFooter: #fff,
+        colorText: #000,
+        colorBackground: #f8f8fa,
+        projectsBackground: linear-gradient(0deg, rgba(233,89,115,1) 0%, rgba(233,89,115,1) 9%, rgba(101,98,190,1) 100%)
+    ),
+    dark: (
+        colorHeaderFooter: #36394c,
+        colorText: #fff,
+        colorBackground: #222736,
+        projectsBackground: #6562BE
+    ),
+);
+
+
+@mixin themify($themes) {
+
+    @each $theme,
+    $map in $themes {
+        .theme-#{$theme} & {
+            $theme-map: () !global;
+
+            @each $key,
+            $submap in $map {
+                $value: map-get(map-get($themes, $theme), '#{$key}');
+                $theme-map: map-merge($theme-map,
+                        ($key: $value,
+                        )) !global;
+            }
+
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+
+@function themed($key) {
+    @return map-get($theme-map, $key);
+}
